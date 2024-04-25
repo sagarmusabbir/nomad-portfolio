@@ -16,62 +16,13 @@ import { barlow } from '../fonts';
 
 export default function Header() {
   return (
-    // <header>
-    //   <Navbar
-    //   className="flex h-20 items-end bg-slate-50 drop-shadow-md backdrop-blur-sm dark:bg-slate-800 md:h-52"
-
-    //   >
-    //     <NavbarBrand className="text-slate-900  dark:text-slate-50" href="./">
-    //       <Link href=",/" className="text-4xl font-bold">
-    //         <AcmeLogo />
-    //       </Link>
-    //     </NavbarBrand>
-
-    //     <div className="flex items-center gap-3 md:order-2 md:gap-2 lg:order-2">
-    //       <DarkThemeToggle />
-
-    //       <NavbarToggle
-    //         theme={{
-    //           // icon: "h-5 w-5 shrink-0",
-    //           base: 'inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden',
-    //         }}
-    //       />
-    //     </div>
-
-    //     <NavbarCollapse
-    //       theme={{
-    //         list: 'mt-4 flex flex-col lg:mt-0 lg:flex-row md:flex-row md:mt-0 md:space-x-4 lg:space-x-8 lg:text-base lg:font-medium md:text-[14px] md:font-normal',
-    //         // base: "w-full md:block md:w-auto ",
-    //       }}
-    //       className="md:order-1 lg:order-1"
-    //     >
-    //       <NavbarLink
-    //         theme={{
-    //           active: {
-    //             on: 'bg-primary-700 text-white dark:text-white md:bg-transparent md:text-primary-700',
-    //           },
-    //         }}
-    //         active
-    //         href="#"
-    //       >
-    //         Home
-    //       </NavbarLink>
-    //       <NavbarLink href="#">About</NavbarLink>
-    //       <NavbarLink href="#">Services</NavbarLink>
-    //       <NavbarLink href="#">Pricing</NavbarLink>
-    //       <NavbarLink href="#">Contact</NavbarLink>
-    //       {/* <NavLinks /> */}
-    //     </NavbarCollapse>
-    //   </Navbar>
-    // </header>
-
     <header>
       <Navbar
         sticky-top
         fluid
         className="bg-slate-50 backdrop-blur-sm dark:bg-gray-700 "
       >
-        <Navbar.Brand href="https://flowbite.com">
+        <Navbar.Brand href="./">
           <AcmeLogo />
         </Navbar.Brand>
         <div className="flex items-center gap-3 md:order-2 md:gap-2 lg:order-2">
