@@ -79,7 +79,7 @@ export default function Header() {
           {/* <Button outline gradientDuoTone="greenToBlue" href="#">
             Get started
           </Button> */}
-          <Button outline gradientDuoTone="greenToBlue">
+          <Button color="light">
             Hire
             <AtSymbolIcon className="mr-2 h-5 w-5" />
             Upwork

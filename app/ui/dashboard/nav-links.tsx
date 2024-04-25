@@ -43,10 +43,10 @@ export default function NavLinks() {
               },
             )}
           >
-            <LinkIcon className="w-6" />
+            <LinkIcon className="w-6 md:hidden" />
             <p>
               {link.name}{' '}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              <span className="hidden transition-transform group-hover:translate-x-1 motion-reduce:transform-none md:inline-block ">
                 -&gt;
               </span>
             </p>

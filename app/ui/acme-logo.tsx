@@ -21,7 +21,9 @@ export default function AcmeLogo() {
 
 export function Logo() {
   return (
-    <div className={'flex flex-row items-center leading-none text-slate-700'}>
+    <div
+      className={`${barlow.className} flex flex-row items-center leading-none text-slate-700 dark:text-slate-100`}
+    >
       {/* <GlobeAltIcon className="h-12 w-12 rotate-[15deg]" /> */}
       <HomeIcon className="h-12 w-12" />
       <p className="text-[44px]">MS</p>
