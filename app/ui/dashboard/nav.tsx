@@ -1,43 +1,124 @@
+'use client';
+
 import Link from 'next/link';
 import NavLinks from '@/app/ui/dashboard/nav-links';
+import { AtSymbolIcon } from '@heroicons/react/24/outline';
+import AcmeLogo from '../acme-logo';
+import { Button, DarkThemeToggle } from 'flowbite-react';
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarCollapse,
+  NavbarLink,
+  NavbarToggle,
+} from 'flowbite-react';
+import { barlow } from '../fonts';
 
 export default function Header() {
   return (
-    <>
-      <nav
-        className="nav_dropshadow bg-purple flex flex-wrap items-center justify-between drop-shadow-xl"
-        // style="background-color: #2F3030"
+    // <header>
+    //   <Navbar
+    //   className="flex h-20 items-end bg-slate-50 drop-shadow-md backdrop-blur-sm dark:bg-slate-800 md:h-52"
+
+    //   >
+    //     <NavbarBrand className="text-slate-900  dark:text-slate-50" href="./">
+    //       <Link href=",/" className="text-4xl font-bold">
+    //         <AcmeLogo />
+    //       </Link>
+    //     </NavbarBrand>
+
+    //     <div className="flex items-center gap-3 md:order-2 md:gap-2 lg:order-2">
+    //       <DarkThemeToggle />
+
+    //       <NavbarToggle
+    //         theme={{
+    //           // icon: "h-5 w-5 shrink-0",
+    //           base: 'inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden',
+    //         }}
+    //       />
+    //     </div>
+
+    //     <NavbarCollapse
+    //       theme={{
+    //         list: 'mt-4 flex flex-col lg:mt-0 lg:flex-row md:flex-row md:mt-0 md:space-x-4 lg:space-x-8 lg:text-base lg:font-medium md:text-[14px] md:font-normal',
+    //         // base: "w-full md:block md:w-auto ",
+    //       }}
+    //       className="md:order-1 lg:order-1"
+    //     >
+    //       <NavbarLink
+    //         theme={{
+    //           active: {
+    //             on: 'bg-primary-700 text-white dark:text-white md:bg-transparent md:text-primary-700',
+    //           },
+    //         }}
+    //         active
+    //         href="#"
+    //       >
+    //         Home
+    //       </NavbarLink>
+    //       <NavbarLink href="#">About</NavbarLink>
+    //       <NavbarLink href="#">Services</NavbarLink>
+    //       <NavbarLink href="#">Pricing</NavbarLink>
+    //       <NavbarLink href="#">Contact</NavbarLink>
+    //       {/* <NavLinks /> */}
+    //     </NavbarCollapse>
+    //   </Navbar>
+    // </header>
+
+    <header>
+      <Navbar
+        sticky-top
+        fluid
+        className="bg-slate-50 backdrop-blur-sm dark:bg-gray-700 "
       >
-        <div className="mr-56 flex flex-shrink-0 items-center self-stretch bg-gradient-to-b from-purple-500 to-purple-500/25 pr-40 text-white [clip-path:polygon(0_0,100%_0,calc(100%-theme(spacing.8))_100%,0_100%)]">
-          <a className="font-coolvetica pl-3 text-4xl font-bold text-white">
-            ZeroHero
-          </a>
+        <Navbar.Brand href="https://flowbite.com">
+          <AcmeLogo />
+        </Navbar.Brand>
+        <div className="flex items-center gap-3 md:order-2 md:gap-2 lg:order-2">
+          <DarkThemeToggle />
+          {/* <Button outline gradientDuoTone="greenToBlue" href="#">
+            Get started
+          </Button> */}
+          <Button outline gradientDuoTone="greenToBlue">
+            Hire
+            <AtSymbolIcon className="mr-2 h-5 w-5" />
+            Upwork
+          </Button>
+
+          <Navbar.Toggle
+            theme={{
+              // icon: "h-5 w-5 shrink-0",
+              base: 'inline-flex items-center rounded-lg p-2 text-sm text-gray-800 hover:border-gray-300 hover:bg-slate-200/50 hover:text-gray-900 hover:backdrop-blur-md dark:text-slate-100 hover:dark:border-slate-600 dark:hover:bg-slate-800/30 hover:dark:text-slate-50 focus:outline-none focus:ring-2 focus:ring-gray-900  md:hidden',
+            }}
+          />
         </div>
-        <div className="flex w-auto flex-grow items-center p-3">
-          <div className="flex-grow text-xl/8 text-white">
-            <a href="#" className="text-white-200 mr-4 inline-block">
-              {' '}
-              Dashboard{' '}
-            </a>
-            <a href="#" className="text-white-200 mr-4 inline-block">
-              {' '}
-              Games{' '}
-            </a>
-            <a href="#" className="text-white-200 mr-4 inline-block">
-              {' '}
-              Statistics{' '}
-            </a>
-          </div>
-          <div className="pr-3">
-            <button
-              className="font-roboto bg-teal inline-flex items-center rounded-md border-0 px-7 py-3 text-sm font-bold text-black"
-              //   style="background-color: #00F0FF"
-            >
-              Connect Wallet
-            </button>
-          </div>
-        </div>
-      </nav>
-    </>
+        <Navbar.Collapse
+          theme={{
+            list: 'mt-4 flex flex-col lg:mt-0 lg:flex-row md:flex-row md:mt-0 md:space-x-4 lg:space-x-8 lg:text-base lg:font-medium md:text-[14px] md:font-normal',
+            // base: "w-full md:block md:w-auto ",
+          }}
+          className="md:order-1 lg:order-1"
+        >
+          {/* <Navbar.Link
+            theme={{
+              active: {
+                on: 'bg-primary-700 text-white dark:text-white md:bg-transparent md:text-primary-700',
+              },
+            }}
+            active
+            href="#"
+          >
+            Home
+          </Navbar.Link>
+          <Navbar.Link href="#">Company</Navbar.Link>
+          <Navbar.Link href="#">Marketplace</Navbar.Link>
+
+          <Navbar.Link href="#">Features</Navbar.Link>
+          <Navbar.Link href="#">Team</Navbar.Link>
+          <Navbar.Link href="#">Contact</Navbar.Link> */}
+          <NavLinks />
+        </Navbar.Collapse>
+      </Navbar>
+    </header>
   );
 }

@@ -1,4 +1,5 @@
 import SideNav from '@/app/ui/dashboard/sidenav';
+import Header from '../ui/dashboard/nav';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
