@@ -9,11 +9,11 @@ import { Button } from 'flowbite-react/components/Button';
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6 dark:bg-black">
-      <div className="dark:border-dark-800 flex h-20 shrink-0 items-end rounded-xl border  p-4 shadow-sm dark:bg-gray-950/50 md:h-52">
+      <div className="dark:border-dark-800 flex h-20 shrink-0 items-end rounded-xl border  p-4 shadow-sm dark:bg-gray-950 md:h-52">
         <AcmeLogo />
       </div>
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
-        <div className="dark:border-dark-800 flex flex-col justify-center gap-6 rounded-lg border  border bg-gray-50 px-6 py-10 shadow-sm dark:bg-gray-950 md:w-2/5 md:px-20">
+        <div className="dark:border-dark-800 flex flex-col justify-center gap-6 rounded-lg border bg-gray-50 px-6 py-10 shadow-sm dark:bg-gray-950 md:w-2/5 md:px-20">
           <p
             className={`${inter.className} truncate text-lg text-gray-800 dark:text-white md:text-xl md:leading-normal`}
           >

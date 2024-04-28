@@ -20,7 +20,7 @@ export default function Header() {
       <Navbar
         sticky-top="true"
         fluid
-        className="bg-accentdk-emr backdrop-blur-sm dark:bg-gray-700 "
+        className="dark:border-dark-800 border-b shadow-sm dark:bg-gray-950"
       >
         <Navbar.Brand href="./">
           <AcmeLogo />
