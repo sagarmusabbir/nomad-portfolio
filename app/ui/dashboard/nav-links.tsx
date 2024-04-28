@@ -36,14 +36,14 @@ export default function NavLinks() {
             key={link.name}
             href={link.href}
             className={clsx(
-              'order-transparent hover:border-px group my-1 flex h-[48px] grow items-center justify-start gap-2 rounded-md border border-transparent  p-3 text-sm font-medium text-gray-800 hover:border-gray-300 hover:bg-slate-200/50 hover:text-gray-900 hover:backdrop-blur-md dark:text-slate-100 hover:dark:border-slate-600 dark:hover:bg-slate-800/30 hover:dark:text-slate-50  md:flex-none md:justify-start md:p-2 md:px-3',
+              'order-transparent hover:border-px group my-1 flex h-[48px] grow flex-wrap items-center justify-start gap-2 rounded-md border border-transparent  p-3 text-sm font-medium text-gray-800 hover:border-gray-300 hover:bg-slate-200/50 hover:text-gray-900 hover:backdrop-blur-md dark:text-slate-100 hover:dark:border-slate-600 dark:hover:bg-slate-800/30 hover:dark:text-slate-50  md:flex-none md:justify-center md:p-2 md:px-3',
               {
                 'bg-slate-200/50 text-gray-950 backdrop-blur-xl dark:bg-slate-800/30':
                   pathname === link.href,
               },
             )}
           >
-            <LinkIcon className="w-6 md:hidden" />
+            <LinkIcon className="hidden w-6 md:inline-block" />
             <p>
               {link.name}{' '}
               <span className="hidden transition-transform group-hover:translate-x-1 motion-reduce:transform-none md:inline-block ">

@@ -1,3 +1,7 @@
 export default function Page() {
-  return <p>Musabbirs Terminal</p>;
+  return (
+    <main>
+      <p>Musabbirs Terminal</p>
+    </main>
+  );
 }

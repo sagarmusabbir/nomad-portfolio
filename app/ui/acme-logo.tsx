@@ -41,3 +41,12 @@ export function Logo() {
     </div>
   );
 }
+
+export function Home() {
+  return (
+    <div className={`${barlow.className} flex flex-row items-center `}>
+      {/* <GlobeAltIcon className="h-12 w-12 rotate-[15deg]" /> */}
+      <HomeIcon className="w-5" />
+    </div>
+  );
+}
