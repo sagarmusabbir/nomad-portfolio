@@ -9,7 +9,7 @@ import { Button } from 'flowbite-react/components/Button';
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6 dark:bg-black">
-      <div className="dark:border-dark-800 flex h-20 shrink-0 items-end rounded-xl border bg-slate-100/30 p-4 shadow-sm dark:bg-gray-950 md:h-52">
+      <div className="dark:border-dark-800 flex h-20 shrink-0 items-end rounded-xl border  p-4 shadow-sm dark:bg-gray-950/50 md:h-52">
         <AcmeLogo />
       </div>
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
@@ -20,13 +20,13 @@ export default function Page() {
             <strong>Musabbir Sagar</strong>
             <br />
             CEO of{' '}
-            <a href="https://nextjs.org/learn/" className="text-teal-500">
+            <a href="https://nextjs.org/learn/" className="text-primary-400">
               Third Bracket Solution
             </a>
           </p>
           <Button
             href="./terminal"
-            className="text-dark-700 hover:bg-light-200/30 border border-slate-300 bg-transparent focus:outline-none focus:ring  focus:ring-teal-300 focus:ring-offset-0"
+            className="text-dark-800 hover:bg-light-200/50 dark:hover:bg-dark-900/40  border border-gray-300 bg-transparent hover:border-gray-400 focus:outline-none focus:ring  focus:ring-slate-400 focus:ring-offset-0  dark:border-gray-800 dark:bg-transparent dark:text-slate-300"
           >
             Enter
             <ArrowRightIcon className="w-5" />
