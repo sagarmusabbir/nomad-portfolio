@@ -23,18 +23,8 @@ export default function Page() {
           <Breadcrumb.Item>Flowbite React</Breadcrumb.Item>
         </Breadcrumb>
       </div>
-      <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
-        <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
-          {/* Add Hero Images Here */}
-          <Image
-            src="/kkk.svg"
-            width={400}
-            height={400}
-            className="hidden dark:invert md:block"
-            alt="Screenshots of the dashboard project showing desktop version"
-          />
-        </div>
-        <div className="flex flex-col justify-center gap-4 rounded-lg border bg-gray-50 px-6 py-6 shadow-sm dark:border-dark-800 dark:bg-gray-950 md:w-2/5 md:px-20">
+      <div className="mt-4 flex  flex-col gap-4 md:flex-row">
+        <div className="flex flex-col justify-center gap-4 rounded-lg border bg-gray-50 p-2 shadow-sm dark:border-dark-800 dark:bg-gray-950 md:w-2/5 md:px-20">
           <p
             className={`${inter.className} truncate text-lg text-gray-800 dark:text-white md:text-xl md:leading-normal`}
           >
@@ -52,6 +42,23 @@ export default function Page() {
             Enter
             <ArrowRightIcon className="w-5" />
           </Button>
+        </div>
+        <div className="flex items-center justify-center p-2 md:w-3/5 md:px-28 md:py-12">
+          {/* Add Hero Images Here */}
+          <Image
+            src="/me2.svg"
+            width={500}
+            height={380}
+            className="hidden mix-blend-screen  dark:invert md:block"
+            alt="Screenshots of the dashboard project showing desktop version"
+          />
+          <Image
+            src="/hero-mobile.png"
+            width={560}
+            height={620}
+            className="block md:hidden"
+            alt="Screenshots of the dashboard project showing mobile version"
+          />
         </div>
       </div>
     </main>
